@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="style.css" class="style-mark">
+    <script src="script.js"></script>
+    <title>Zoo Online</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 class="hidden">Online Zoo</h1>
+            <a href="index.html">
+                <div class="header_logo"></div>
+            </a>
+            <nav id="header_nav">
+                <ul class="nav_list header_nav_list">
+                    <li class="header_nav_item"><a class="header_nav_link active_page" href="">About</a></li>
+                    <li class="header_nav_item"><a class="header_nav_link" href="./pages/panda/panda.html">Zoos</a></li>
+                    <li class="header_nav_item"><a class="header_nav_link" href="./pages/map/index.html">Map</a></li>
+                    <li class="header_nav_item"><a class="header_nav_link" href="#contact_us">Contact Us</a></li>
+                    <li class="header_nav_item"><a class="header_nav_link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+                </ul>
+            </nav>
+            <div id="header_switch">
+                <input type="checkbox" class="toggle-btn">
+                <label for="toggle-btn" class="text"></label>
+            </div>
+            <svg class="burger" width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.5" x2="40" y2="1.5" stroke="#333333" stroke-width="3"/>
+                <line y1="10.5" x2="40" y2="10.5" stroke="#333333" stroke-width="3"/>
+                <line x1="7" y1="19.5" x2="40" y2="19.5" stroke="#333333" stroke-width="3"/>
+            </svg>
+        </div>
+    </header>
+    <div class="first_screen">
+        <div class="first_screen_wrapper">
+            <div class="first_screen_header">Watch your favorite animal online
+                <a href="./pages/panda/panda.html" class="gradient-btn">
+                    <div>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                    </svg> Watch online
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="first_screen_gallery">
+                <svg width="1080" height="13" viewBox="0 0 1080 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="6.5" x2="1087" y2="6.5" stroke="#FEFEFE"/>
+                    <circle cx="6.5" cy="6.5" r="2.5" fill="#FEFEFE"/>
+                    <circle cx="6.5" cy="6.5" r="6" stroke="#FEFEFE"/>
+                </svg>
+                <div class="images">
+                    <div data-index="1" class="gallery_item">
+                        <img src="./assets/images/eagle.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="2" class="gallery_item chosen_item">
+                        <img src="./assets/images/panda.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="3" class="gallery_item">
+                        <img src="./assets/images/gorilla.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="4" class="gallery_item">
+                        <img src="./assets/images/alligator.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="5" class="gallery_item">
+                        <img src="./assets/images/fox.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="6" class="gallery_item">
+                        <img src="./assets/images/sloth.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="7" class="gallery_item">
+                        <img src="./assets/images/elephant.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                    <div data-index="8" class="gallery_item">
+                        <img src="./assets/images/tiger.png" alt="" class="gallery_image">
+                        <div class="image_legend">
+                            <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                            <a href="./pages/panda/panda.html" class="gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                                    </svg> Watch online
+                            </a>
+                            <a href="" class="donate_btn gallery_btns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                        <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                                    </svg>Donate
+                            </a>
+                            <div class="gallery_donate_btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control white_control">
+                    <div class="counter">
+                        <div class="current_counter">02</div>/
+                        <div class="total_counter">08</div>
+                    </div>
+                    <input type="range" class="control_slider" value="2" min="1" max="8" step="1">
+                </div>
+            </div>
+            <div class="first_screen_socials">
+                <a href="http:\\instagram.com" class="socials_link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" fill="#FEFEFE"/>
+                        <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" fill="#FEFEFE"/>
+                        <path d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z" fill="#FEFEFE"/>
+                    </svg>
+                </a>
+                <a href="http:\\twitter.com" class="socials_link">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 1.92375C19.2563 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4412 0.305C18.6488 0.7775 17.7738 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5763 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6788 6.065 12.7175C4.67 13.8088 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4513 0 14.41C1.81625 15.5813 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9538 4.22625 17.945 4.0525C18.7588 3.475 19.4425 2.75375 20 1.92375Z" fill="#FEFEFE"/>
+                    </svg>
+                </a>
+                <a href="http:\\youtube.com" class="socials_link">
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7137 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6087 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z" fill="#FEFEFE"/>
+                    </svg>
+                </a>
+                <a href="http:\\vk.com" class="socials_link">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2601 0.932674 15.2601 0.932674C15.2601 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z" fill="#FEFEFE"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="how_screen">
+        <div class="wrapper">
+            <div class="screen_header">How it works?</div>
+            <div class="article">
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds.
+                Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity
+                and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+            </div>
+            <img src="./assets/images/deers.png" alt="">
+            <div class="control black_control">
+                <div class="counter">
+                    <div class="current_counter">01</div>/
+                    <div class="total_counter">04</div>
+                </div>
+                <input type="range" class="control_slider" value="1" min="1" max="4" step="1">
+            </div>
+            <a href="./pages/panda/panda.html" class="gradient-btn">
+                <div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                        <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                    </svg> Watch online
+                </div>
+            </a>
+        </div>
+
+        <div class="gray_block">
+            <div class="wrapper">
+                <div class="item">
+                    <img src="./assets/icons/gray_block-img_1.svg" alt="">
+                    <div class="header">What inspires us?</div>
+                    <div class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects,<span class="resolution_hide"> including providing veterinary support and raising much-needed
+                        emergency funds.</span></div>
+                </div>
+                <div class="item">
+                    <img src="./assets/icons/gray_block-img_2.svg" alt="">
+                    <div class="header">Our mission</div>
+                    <div class="text">Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/icons/gray_block-img_3.svg" alt="">
+                    <div class="header">What we believe in?</div>
+                    <div class="text">Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pets_screen">
+        <div class="wrapper">
+            <div class="screen_header">Pets in Zoo</div>
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z" fill="#828282"/>
+                </svg>
+            <div class="gallery">
+
+                <div class="item active">
+                    <img src="./assets/images/panda.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/eagle.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/gorilla2.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/alligator.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/elephant.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/sloth.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/fox.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/images/tiger.png" alt="">
+                    <div class="image_legend">
+                        <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                        <a href="./pages/panda/panda.html" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                                <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                            </svg> Watch online
+                        </a>
+                        <a href="" class="gallery_btns">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11.5" stroke="white"/>
+                                <path d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z" fill="white"/>
+                            </svg>Donate
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z" fill="#828282"/>
+                </svg>
+            <div class="control black_control">
+                <div class="counter">
+                    <div class="current_counter">01</div>/
+                    <div class="total_counter">08</div>
+                </div>
+                <input type="range" class="control_slider" value="1" min="1" max="8" step="1">
+            </div>
+            <a href="./pages/panda/panda.html" class="gradient-btn">
+                <div>choose your favorite</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="pay_screen">
+        <div class="wrapper">
+            <div class="screen_header">Pay and feed</div>
+            <div class="text">The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that you like.</div>
+            <div class="content">
+                <div class="item">
+                    <svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="122.5" cy="122.5" r="121" stroke="url(#paint0_linear)" stroke-width="3"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-45.7461" y1="-1.28803e-06" x2="290.544" y2="102.084" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4BD8B5"/>
+                                <stop offset="1" stop-color="#49D6DF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/icons/credit.svg" alt="">
+                    <div class="item_name">You pay with a VISA card</div>
+                </div>
+                <svg width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z" fill="url(#paint0_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4BD8B5"/>
+                            <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="item">
+                    <svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="122.5" cy="122.5" r="121" stroke="url(#paint0_linear)" stroke-width="3"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-45.7461" y1="-1.28803e-06" x2="290.544" y2="102.084" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4BD8B5"/>
+                                <stop offset="1" stop-color="#49D6DF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/icons/zoo.svg" alt="">
+                    <div class="item_name">Payment goes to the Zoo</div>
+                </div>
+                <svg width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z" fill="url(#paint0_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4BD8B5"/>
+                            <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="item">
+                    <svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="122.5" cy="122.5" r="121" stroke="url(#paint0_linear)" stroke-width="3"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-45.7461" y1="-1.28803e-06" x2="290.544" y2="102.084" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4BD8B5"/>
+                                <stop offset="1" stop-color="#49D6DF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/icons/panda.svg" alt="">
+                    <div class="item_name">Panda gets the bamboo</div>
+                </div>
+            </div>
+            <a href="" class="gradient-btn">
+                <div>donate</div>
+            </a>
+        </div>
+    </div>
+    <div class="testimonials_screen">
+        <div class="wrapper">
+            <div class="screen_header">Testimonials</div>
+            <div class="content">
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z" fill="#828282"/>
+                </svg>
+                <div class="item">
+                    <img src="./assets/icons/picture.svg" alt="">
+                    <div class="name">Nastya Sidorova</div>
+                    <div class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</div>
+                </div>
+                <div class="item">
+                    <img src="./assets/icons/picture.svg" alt="">
+                    <div class="name">Vlad Kim</div>
+                    <div class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</div>
+                </div>
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z" fill="#828282"/>
+                </svg>
+            </div>
+            <div class="control black_control">
+                <div class="counter">
+                    <div class="current_counter">02</div>/
+                    <div class="total_counter">08</div>
+                </div>
+                <input type="range" class="control_slider" value="2" min="1" max="8" step="1">
+            </div>
+            <a href="#contact_us" class="gradient-btn">
+                <div>leave feedback</div>
+            </a>
+        </div>
+    </div>
+    <div class="map_screen">
+        <div class="wrapper">
+            <div class="block_name">Map</div>
+            <div class="map">
+                <div class="marker eagle_marker">
+                    <svg width="68" height="94" viewBox="0 0 68 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.034 0.496094C15.8009 0.496094 0.967773 15.331 0.967773 33.5663C0.967773 51.2064 31.1981 91.3966 32.4859 93.1007C32.8477 93.5871 33.4274 93.871 34.0342 93.871C34.6411 93.871 35.2208 93.5871 35.5826 93.1007C36.8701 91.3966 67.1007 51.2065 67.1007 33.5663C67.1003 15.331 52.2671 0.496094 34.034 0.496094ZM34.034 51.0741C24.3826 51.0741 16.5283 43.219 16.5283 33.5663C16.5283 23.9137 24.3826 16.0585 34.034 16.0585C43.6855 16.0585 51.5397 23.9137 51.5397 33.5663C51.5397 43.219 43.6855 51.0741 34.034 51.0741Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-11.3805" y1="0.496093" x2="83.379" y2="20.869" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5"/>
+                        <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/images/circle-eagle.png" alt="" class="marker_img">
+                    <div class="tooltip">
+                        <img src="./assets/images/tooltip_circle-eagle.png" alt="">
+                        <div class="description">
+                            <div class="name">West End Bald Eagle</div>
+                            <div class="text">
+                                <span><b>Region:</b> on an island near Los Angeles</span>
+                                <br>
+                                <span><b>Population:</b> more than 270 pairs in 2013</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marker alligator_marker">
+                    <svg width="68" height="94" viewBox="0 0 68 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.034 0.496094C15.8009 0.496094 0.967773 15.331 0.967773 33.5663C0.967773 51.2064 31.1981 91.3966 32.4859 93.1007C32.8477 93.5871 33.4274 93.871 34.0342 93.871C34.6411 93.871 35.2208 93.5871 35.5826 93.1007C36.8701 91.3966 67.1007 51.2065 67.1007 33.5663C67.1003 15.331 52.2671 0.496094 34.034 0.496094ZM34.034 51.0741C24.3826 51.0741 16.5283 43.219 16.5283 33.5663C16.5283 23.9137 24.3826 16.0585 34.034 16.0585C43.6855 16.0585 51.5397 23.9137 51.5397 33.5663C51.5397 43.219 43.6855 51.0741 34.034 51.0741Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-11.3805" y1="0.496093" x2="83.379" y2="20.869" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5"/>
+                        <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/images/circle-alligator.png" alt="" class="marker_img">
+                    <div class="tooltip">
+                        <img src="./assets/images/tooltip_circle-eagle.png" alt="">
+                        <div class="description">
+                            <div class="name">West End Bald Eagle</div>
+                            <div class="text">
+                                <span><b>Region:</b> on an island near Los Angeles</span>
+                                <br>
+                                <span><b>Population:</b> more than 270 pairs in 2013</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marker gorilla_marker">
+                    <svg width="68" height="94" viewBox="0 0 68 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.034 0.496094C15.8009 0.496094 0.967773 15.331 0.967773 33.5663C0.967773 51.2064 31.1981 91.3966 32.4859 93.1007C32.8477 93.5871 33.4274 93.871 34.0342 93.871C34.6411 93.871 35.2208 93.5871 35.5826 93.1007C36.8701 91.3966 67.1007 51.2065 67.1007 33.5663C67.1003 15.331 52.2671 0.496094 34.034 0.496094ZM34.034 51.0741C24.3826 51.0741 16.5283 43.219 16.5283 33.5663C16.5283 23.9137 24.3826 16.0585 34.034 16.0585C43.6855 16.0585 51.5397 23.9137 51.5397 33.5663C51.5397 43.219 43.6855 51.0741 34.034 51.0741Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-11.3805" y1="0.496093" x2="83.379" y2="20.869" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5"/>
+                        <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/images/circle-gorilla.png" alt="" class="marker_img">
+                    <div class="tooltip">
+                        <img src="./assets/images/tooltip_circle-eagle.png" alt="">
+                        <div class="description">
+                            <div class="name">West End Bald Eagle</div>
+                            <div class="text">
+                                <span><b>Region:</b> on an island near Los Angeles</span>
+                                <br>
+                                <span><b>Population:</b> more than 270 pairs in 2013</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marker panda_marker">
+                    <svg width="68" height="94" viewBox="0 0 68 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.034 0.496094C15.8009 0.496094 0.967773 15.331 0.967773 33.5663C0.967773 51.2064 31.1981 91.3966 32.4859 93.1007C32.8477 93.5871 33.4274 93.871 34.0342 93.871C34.6411 93.871 35.2208 93.5871 35.5826 93.1007C36.8701 91.3966 67.1007 51.2065 67.1007 33.5663C67.1003 15.331 52.2671 0.496094 34.034 0.496094ZM34.034 51.0741C24.3826 51.0741 16.5283 43.219 16.5283 33.5663C16.5283 23.9137 24.3826 16.0585 34.034 16.0585C43.6855 16.0585 51.5397 23.9137 51.5397 33.5663C51.5397 43.219 43.6855 51.0741 34.034 51.0741Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-11.3805" y1="0.496093" x2="83.379" y2="20.869" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5"/>
+                        <stop offset="1" stop-color="#49D6DF"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    <img src="./assets/images/circle-panda.png" alt="" class="marker_img">
+                    <div class="tooltip">
+                        <img src="./assets/images/tooltip_circle-eagle.png" alt="">
+                        <div class="description">
+                            <div class="name">West End Bald Eagle</div>
+                            <div class="text">
+                                <span><b>Region:</b> on an island near Los Angeles</span>
+                                <br>
+                                <span><b>Population:</b> more than 270 pairs in 2013</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/icons/map.svg" alt="" class="map_img">
+            </div>
+            <a href="./pages/panda/panda.html" class="gradient-btn">
+                <div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 31.5C24.5604 31.5 31.5 24.5604 31.5 16C31.5 7.43959 24.5604 0.5 16 0.5C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43959 31.5 16 31.5Z" stroke="white"/>
+                    <path d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="white"/>
+                </svg> Watch online
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <a href="index.html">
+                <div class="footer_logo"></div>
+            </a>
+
+            <nav class="footer_nav">
+                <ul class="nav_list footer_nav_list">
+                    <li class="footer_item">
+                        <a href="" class="footer_nav_link">About</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="./pages/panda/panda.html" class="footer_nav_link">Zoos</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="./pages/map/index.html" class="footer_nav_link">Map</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="footer_nav_link">Design</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="" class="gradient-btn">donate for volunteers</a>
+
+            <div class="footer_contacts_us" id='contact_us'>
+                <h5 class="footer_contact_us_h5">Contact us</h5>
+                <input class='input' type="text" placeholder="Name">
+                <input class='input' type="email" placeholder="Email">
+                <fieldset>
+                    <legend>Please enter your message</legend>
+                    <textarea class='input message_field' maxlength="280"></textarea>
+                </fieldset>
+
+                <div class="checkbox">
+                    <div class="new_checkbox"></div>
+                    <input class='agreement_checkbox' type="checkbox">
+
+                    <label class='agreement_label' for="agreement_checkbox">I agree to the processing of Personal Data</label>
+                </div>
+
+                <a href="" class="send_btn">
+                    SEND
+                    <svg width="49" height="8" viewBox="0 0 49 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M48.3536 4.35355C48.5488 4.15829 48.5488 3.84171 48.3536 3.64645L45.1716 0.464466C44.9763 0.269204 44.6597 0.269204 44.4645 0.464466C44.2692 0.659728 44.2692 0.976311 44.4645 1.17157L47.2929 4L44.4645 6.82843C44.2692 7.02369 44.2692 7.34027 44.4645 7.53553C44.6597 7.7308 44.9763 7.7308 45.1716 7.53553L48.3536 4.35355ZM0 4.5L48 4.5V3.5L0 3.5L0 4.5Z" fill="#FEFEFE"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="online_centre">
+                <h6 class='zoo_header'>ZOO Online Centre</h6>
+                <span>132, Address District, Street</span>
+                <span>Open Daily 10:00 am - 5:00 pm</span>
+                <div class='br'></div>
+                <span>T(702) 163-3433</span>
+                <span>zoo.online@gmail.com</span>
+                <div class="br"></div>
+                <div class="footer_socials">
+                    <a href="http:\\instagram.com" class="socials_link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" fill="#FEFEFE"/>
+                            <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" fill="#FEFEFE"/>
+                            <path d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                    <a href="http:\\twitter.com" class="socials_link">
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 1.92375C19.2563 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4412 0.305C18.6488 0.7775 17.7738 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5763 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6788 6.065 12.7175C4.67 13.8088 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4513 0 14.41C1.81625 15.5813 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9538 4.22625 17.945 4.0525C18.7588 3.475 19.4425 2.75375 20 1.92375Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                    <a href="http:\\vk.com" class="socials_link">
+                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2601 0.932674 15.2601 0.932674C15.2601 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                    <a href="http:\\youtube.com" class="socials_link">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7137 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6087 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="credits">
+                <div class="footer_line"></div>
+                <div class="credit">
+                    <span>©Noora Sagnayeva</span>
+                    <br>
+                    <span>©RSSchool and ©Yem Digital - 2021</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

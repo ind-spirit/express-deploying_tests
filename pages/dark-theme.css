@@ -1,0 +1,21 @@
+:root {
+    --base: #333333;
+    --gray1: #FEFEFE;
+    --gray2: #F2F2F2;
+    --gray4: #BDBDBD;
+    --gray5: #E0E0E0;
+    --gray6: #4F4F4F;
+    --bg: #4F4F4F;
+}
+
+footer {
+    --base: #FEFEFE;
+    --gray1: #333333;
+    --gray2: #4F4F4F;
+    --gray4: #BDBDBD;
+    --gray5: #E0E0E0;
+    --gray6: #F2F2F2;
+}
+.header_logo {
+    background-image: url('../assets/icons/footer_logo.svg');
+}

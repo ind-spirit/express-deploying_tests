@@ -1,0 +1,30 @@
+:root {
+    --base: #333333;
+    --gray1: #FEFEFE;
+    --gray2: #F2F2F2;
+    --gray4: #BDBDBD;
+    --gray5: #E0E0E0;
+    --gray6: #4F4F4F;
+}
+
+footer {
+    --base: #FEFEFE;
+    --gray1: #333333;
+    --gray2: #4F4F4F;
+    --gray4: #BDBDBD;
+    --gray5: #E0E0E0;
+    --gray6: #F2F2F2;
+}
+.header_logo {
+    background-image: url('./assets/icons/footer_logo.svg');
+}
+.testimonials_screen .item {
+    background-color: #3c3c3c;
+}
+.map_screen .map_img {
+    filter: invert(100%);
+    z-index: -1;
+}
+.map_screen .marker {
+    z-index: 1;
+}
