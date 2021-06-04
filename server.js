@@ -4,8 +4,7 @@ const port = process.env.PORT || 3000;
 const path = require('path');
 
 
-app.use(express.static('./'));
-app.use(express.static('./assets/'));
+app.use(express.static('./public'));
 
 app.get('/', (req, res) => {
   //res.send('get fucked lol')
